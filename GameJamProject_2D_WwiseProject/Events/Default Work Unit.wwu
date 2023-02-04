@@ -1,6 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="VAEvents" ID="{76DB805B-1E5E-4662-82AE-53E34C4CB71F}" ShortID="1001708310">
+					<ChildrenList>
+						<Event Name="VA3" ID="{D7D5DE9F-814B-4962-A4C1-7EBC83E8E2EB}">
+							<ChildrenList>
+								<Action Name="" ID="{7CF840A7-881A-46DF-AAF8-F5907D937B07}" ShortID="1053122760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="3_ With all" ID="{226C3685-68B0-440A-B7C1-D4755006D922}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA1" ID="{5D52620B-471F-45EE-B7E9-4C5F5AE69012}">
+							<ChildrenList>
+								<Action Name="" ID="{1CE3B23B-13DF-4856-BCCA-FF3423DF9776}" ShortID="956999903">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="1_ Hello Trainee" ID="{647DE34E-CEDD-4E01-9338-B5BB58A23FD9}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA9" ID="{4DCD5357-09B9-47C4-B871-D62CF3490860}">
+							<ChildrenList>
+								<Action Name="" ID="{15415CC6-7D98-4FAB-B473-C13472DF0597}" ShortID="450996159">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="9_ Wow" ID="{C15B0ADD-B4A1-44DC-8CBA-4C2DBB925868}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA15" ID="{3AAD7A5F-7C55-46A9-A938-8346CCCBF58D}">
+							<ChildrenList>
+								<Action Name="" ID="{6E52EC49-ADF0-4031-B0B8-6D8DCBFA7696}" ShortID="285833894">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="15_ What What" ID="{C00DE858-2561-44D3-85C8-F50E9EA12CC5}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA5" ID="{C8F4FC4F-D3BB-4B91-BBC1-78D5B369C7DB}">
+							<ChildrenList>
+								<Action Name="" ID="{E3016363-8C6C-4EB8-8831-BBFA692E9DEB}" ShortID="852740852">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="5_ You May" ID="{197F6038-E7A4-4C7E-B56D-37856258AF57}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VAPizza" ID="{15911998-08F5-4DEF-8BBD-53E248A9BCB1}">
+							<ChildrenList>
+								<Action Name="" ID="{16EE2892-7E89-4852-A3A7-4FF89C69A14E}" ShortID="669788573">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pizza" ID="{5B4A78B9-7B4C-49B8-9CBD-8D0779F338C0}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA6" ID="{1A9A6A33-0921-40F9-A3AC-73737B1A7D46}">
+							<ChildrenList>
+								<Action Name="" ID="{EAE72B33-69A7-49BA-BFD1-8F75BF39A3A7}" ShortID="397850200">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="6_ On to" ID="{1F173B23-76FC-4D4E-A3A2-31C3EE8C14E4}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA2" ID="{AFA7900B-4D4B-4284-AD23-5BEC41CDEA4C}">
+							<ChildrenList>
+								<Action Name="" ID="{571A9E2B-854F-4847-8EA7-7ACD86911C79}" ShortID="388332449">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="2_ Before We" ID="{F7D96F65-9E9B-4D12-9BED-9AAA2819C438}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA7" ID="{0E48B0D6-9ED7-4164-8A10-004F5A15D504}">
+							<ChildrenList>
+								<Action Name="" ID="{90F22B7C-01B8-4A0B-ACEE-302709444712}" ShortID="824219363">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="7_ In Fact" ID="{7F1B345F-7C78-4E26-8183-C98821788AD6}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA4" ID="{5A55DE8D-7D9A-4C15-B178-DB891848F3AC}">
+							<ChildrenList>
+								<Action Name="" ID="{B3C9C2A1-097B-4396-9D5C-5F6A1005FAE8}" ShortID="446508461">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="4_ Amazing" ID="{CF4ABAA5-882F-4EEB-B24A-13D7DC0F8F71}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VABigBen" ID="{9B0934F8-8F51-444C-A7EF-91B453AEF3EF}">
+							<ChildrenList>
+								<Action Name="" ID="{E0899C57-09C3-492D-AF29-6F64D5B8766A}" ShortID="857534200">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big Ben" ID="{1FC6160E-4AED-4298-8CC1-379C58E002F4}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VAShoe" ID="{F1524584-8948-45EA-B507-F2BA2A6041A7}">
+							<ChildrenList>
+								<Action Name="" ID="{45036DE8-40E6-4270-9ED3-4E4DB7848921}" ShortID="969242104">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shoe" ID="{F11CCB68-262B-4F53-9CF0-998FA4539B86}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VAAllClicked" ID="{67A7E5FE-4C9C-4582-89A7-C5EC12BBB19A}">
+							<ChildrenList>
+								<Action Name="" ID="{D34603F7-CDD0-433F-8155-CBBB6F577E5A}" ShortID="23706777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="All clicked" ID="{481C345F-2E29-4642-A479-7462FCB28687}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VAPhone" ID="{D4C5E8BF-7898-46FC-99A8-9A0E1E3EF4CF}">
+							<ChildrenList>
+								<Action Name="" ID="{F8B86089-85CA-4660-8F54-C194290F1771}" ShortID="1062564461">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Phone" ID="{78F77902-3799-4312-A6E7-5BD90E9FFF8C}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VANewsPaper" ID="{F144191D-10AD-4C12-99B8-77B754EE896F}">
+							<ChildrenList>
+								<Action Name="" ID="{5C35989F-E2CD-461E-BDF1-7F482CB78C50}" ShortID="442323425">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Newspaper" ID="{1C7A9E76-29DA-42A8-94B6-9AE7B4B70B8A}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VA8" ID="{BC958DE4-B093-4580-89C6-E859B3885461}">
+							<ChildrenList>
+								<Action Name="" ID="{5B0502CE-171F-4777-BE5E-1FD994CC191A}" ShortID="1006824204">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="8_ Please Return" ID="{F6EC79EE-585B-4368-BCF4-2E82EBBD4151}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="EarthSFX" ID="{18C58DA1-FDFB-44DC-B8D8-00BDB74E8823}" ShortID="168304371">
+					<ChildrenList>
+						<Event Name="EarthSong" ID="{CCD0E710-3801-4E5E-8F74-D35022010268}">
+							<ChildrenList>
+								<Action Name="" ID="{32F52C09-F932-4F9B-9153-BFFFA2C22335}" ShortID="918172153">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EarthSong" ID="{228903D3-7DC3-44A4-A268-C115D508BBA6}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EarthSongStop" ID="{053C0DF7-EB76-41B1-B57F-6B8BB6B20E23}">
+							<ChildrenList>
+								<Action Name="" ID="{ACEC1AA6-3105-417E-AA60-7FAE77E1203F}" ShortID="222517839">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EarthSong" ID="{228903D3-7DC3-44A4-A268-C115D508BBA6}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EarthAmbienceStop" ID="{691EAE1A-71F9-41D3-83FD-18D2524FCB5F}">
+							<ChildrenList>
+								<Action Name="" ID="{FB9D5B37-40DA-44EA-A4C2-A1DFB9B5519D}" ShortID="725001906">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EarthAmbience" ID="{E80ACDB0-619A-41DF-BA09-817DEBE2CF15}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EarthAmbience" ID="{6EAAF293-9BDE-4A48-922C-060A5A3F0B5D}">
+							<ChildrenList>
+								<Action Name="" ID="{65D68B34-78B0-4740-8853-997F2B1D5BB4}" ShortID="225346545">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EarthAmbience" ID="{E80ACDB0-619A-41DF-BA09-817DEBE2CF15}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SpaceSFX" ID="{315636E2-D24D-4F13-A5E7-218BB0979F90}" ShortID="95335162">
+					<ChildrenList>
+						<Event Name="DroneFire" ID="{E7E0A3C8-088D-4910-AB68-79937271ADCD}">
+							<ChildrenList>
+								<Action Name="" ID="{C0F3B96D-3D7A-4979-94B2-E001A290CB0A}" ShortID="874647609">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drone Fire" ID="{341F13C1-387F-4FB7-A98C-765254BA5A95}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShipFire" ID="{33327865-C386-45C6-AED1-1E0354FF97ED}">
+							<ChildrenList>
+								<Action Name="" ID="{4FA0A99B-4703-4BB3-AD65-655892FBFE91}" ShortID="1025408921">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ship Fire" ID="{4FE15DAB-0D42-4F37-A378-EEEB2EEA904C}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShipRumble" ID="{14E6186A-D94C-4143-8604-EA3F666D3341}">
+							<ChildrenList>
+								<Action Name="" ID="{3FB65DCB-D4A1-448A-B72D-1571F4EE138F}" ShortID="855430652">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShipRumble" ID="{83BB1CAF-D414-45D1-9C88-32CAE578AB96}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ShipWoosh" ID="{B09A27FA-3662-4A61-B9A6-EE7751F2DF18}">
+							<ChildrenList>
+								<Action Name="" ID="{B9BC7EC1-F155-4FD6-95A6-3782B7A20C32}" ShortID="297036862">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShipWoosh" ID="{28D25D33-71BB-4366-B14F-E591C1E204D5}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DroneMovement" ID="{6F4D6ED6-42A4-4F48-8383-2F72D3D4DF49}">
+							<ChildrenList>
+								<Action Name="" ID="{F0B9061D-D348-4346-B5D3-6231B8CA6493}" ShortID="989397143">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drone Movement" ID="{3AA32CCC-70EC-4374-813C-7C558F5B5DBE}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Explosion" ID="{FF37403F-1F57-4B7E-82EC-DFD30C02EA67}">
+							<ChildrenList>
+								<Action Name="" ID="{292DA0E3-3D22-4C0E-87C9-0BE00F8BB70B}" ShortID="765785361">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Explosion" ID="{0D41C92A-4269-44EE-A4C5-6FA38101D2F2}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HyperDrive" ID="{65E47BDA-E912-4C84-B9C9-8E8C71C94DCA}">
+							<ChildrenList>
+								<Action Name="" ID="{59F7BC74-77A1-49BC-8602-5277E54E4670}" ShortID="48722426">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HyperDrive" ID="{7AA67CF1-3926-458C-BBE4-ABD82B5152BC}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpaceSong" ID="{51E4C370-2515-4BE9-92EA-891EC43592EB}">
+							<ChildrenList>
+								<Action Name="" ID="{D192603E-4DEA-43D7-85CC-1966E9B9E007}" ShortID="123971154">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpaceSong" ID="{A1E4FD17-98FF-4492-98BF-3613631C4981}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpaceSongStop" ID="{B88CA211-AA5A-4E09-91EC-2C33E2FEE5D3}">
+							<ChildrenList>
+								<Action Name="" ID="{2016D984-CDC5-47E0-B8EF-6AC6B005463C}" ShortID="1059296257">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpaceSong" ID="{A1E4FD17-98FF-4492-98BF-3613631C4981}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
