@@ -14,13 +14,16 @@ public abstract class DamageableEntity : MonoBehaviour
     public delegate void HealthUpdate(int health, bool hasDied);
     public event HealthUpdate OnHealthUpdate;
 
+    public delegate void DeathUpdate();
+    public event DeathUpdate OnDeathUpdate;
+
     [SerializeField]
     private EffectObject destroyEffectPrefab;
     
     [SerializeField]
     private bool spawnEffectOnDestroy = true;
 
-
+    private bool deathMessageSent;
 
     public virtual void Damage(Vector3 hitPosition) 
     {
@@ -30,9 +33,12 @@ public abstract class DamageableEntity : MonoBehaviour
 
         OnHealthUpdate?.Invoke(health, hasDied);
         OnDamage(hitPosition);
-        if (hasDied) 
+
+        if (deathMessageSent == false && hasDied) 
         {
+            deathMessageSent = true;
             OnDeath(hitPosition);
+            OnDeathUpdate?.Invoke();
         }
     }
 
@@ -48,6 +54,14 @@ public abstract class DamageableEntity : MonoBehaviour
         if (destroyEffectPrefab == null)
             return;
 
+        if (GameManager.current.LoadingLevel)
+            return;
+
+        SpawnDeathEffect();
+    }
+
+    public void SpawnDeathEffect() 
+    {
         Instantiate(destroyEffectPrefab, transform.position, transform.rotation);
     }
 }

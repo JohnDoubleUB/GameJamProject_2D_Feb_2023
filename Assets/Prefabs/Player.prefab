@@ -224,6 +224,9 @@ MonoBehaviour:
   projectileTimeToLive: 0.4
   projectileSpeed: 0.1
   animator: {fileID: 8192541174705816099}
+  canAccelerate: 1
+  canUseMouse: 1
+  canFire: 1
 --- !u!50 &7519436544388144278
 Rigidbody2D:
   serializedVersion: 4

@@ -10,7 +10,6 @@ public class Drone : DamageableEntity
 
     public Transform projectileSpawnLocation;
 
-
     public bool usePredictedPosition = true;
 
     private float TurnTimeMultiplier = 50f;
@@ -33,6 +32,14 @@ public class Drone : DamageableEntity
     private float maxDistanceFromPlayer = 6f;
     private float maxFireDistance = 15f;
     private float agroDistance = 20f;
+    private bool agroEnabled = false;
+
+    private uint? droneMovementSoundEventID = null;
+
+    public void SetEnableAgro(bool enable) 
+    {
+        agroEnabled = enable;
+    }
 
     private void Start()
     {
@@ -52,7 +59,7 @@ public class Drone : DamageableEntity
 
         float distanceToPlayer = Vector3.Distance(transform.position, playerPosition);
 
-        if (distanceToPlayer < agroDistance)
+        if (agroEnabled == false || distanceToPlayer < agroDistance)
         {
             Quaternion targetRotation = GetRotationToTarget(playerPosition);
             float playerAimAngle = Quaternion.Angle(transform.rotation, targetRotation);
@@ -64,8 +71,10 @@ public class Drone : DamageableEntity
             //Rotate towards player
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotationModifier);
 
-
-
+            if (droneMovementSoundEventID == null && rb.velocity.normalized.magnitude > 1f)
+            {
+                droneMovementSoundEventID = AudioManager.current.AK_PlayClipOnObject("DroneMovement", gameObject);
+            }
 
 
             if (distanceToPlayer > maxDistanceFromPlayer)
@@ -93,6 +102,11 @@ public class Drone : DamageableEntity
                 fireInterval = 0f;
             }
         }
+        else 
+        {
+            AudioManager.current.AK_PlayClipOnObject("DroneMovementStop", gameObject);
+            droneMovementSoundEventID = null;
+        }
     }
 
     private void Fire() 
@@ -101,6 +115,7 @@ public class Drone : DamageableEntity
         currentFireInterval = GenerateFireInterval(baseFireInterval, fireIntervalVariation);
         fireInterval = 0;
         SpawnProjectile();
+        AudioManager.current.AK_PlayEventAt("DroneFire", transform.position);
     }
 
     private void SpawnProjectile() 
@@ -121,6 +136,7 @@ public class Drone : DamageableEntity
 
     protected override void OnDeath(Vector3 hitPosition)
     {
+        AudioManager.current.AK_PlayClipOnObject("DroneMovementStop", gameObject);
         Destroy(gameObject);
     }
 

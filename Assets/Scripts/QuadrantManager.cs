@@ -23,6 +23,9 @@ public class QuadrantManager : MonoBehaviour
     private Asteroid[] asteroidPrefabs;
 
     [SerializeField]
+    private Drone[] dronePrefabs;
+
+    [SerializeField]
     private float asteroidMinScale = 0.6f;
     [SerializeField]
     private float asteroidMaxScale = 2f;
@@ -97,11 +100,24 @@ public class QuadrantManager : MonoBehaviour
                     if (asteroid == null)
                         continue;
 
-                    asteroid.rb.AddForce(UnityEngine.Random.insideUnitCircle * 500f);
+                    asteroid.rb.AddForce(UnityEngine.Random.insideUnitCircle * 300f);
                 }
 
                 currentCheckInterval = 0;
             }
+        }
+    }
+
+    public void RemoveAllAsteroids()
+    {
+        CleanNullsFromAsteroidsListAndGetCount();
+
+        foreach (Asteroid asteroid in LiveAsteroids)
+        {
+            if (asteroid == null)
+                continue;
+
+            Destroy(asteroid.gameObject);
         }
     }
 
@@ -119,9 +135,51 @@ public class QuadrantManager : MonoBehaviour
         return LiveAsteroids.Count;
     }
 
+    public void InitializeAsteroids() 
+    {
+        AllowAsteroids = true;
+        SpawnAsteroids(asteroidSpawnCount);
+    }
+
+    public void DisableFurtherAsteroids() 
+    {
+        AllowAsteroids = false;
+    }
+
+    public Drone[] SpawnDrones(int droneCount, bool withAgroRange)
+    {
+        Drone[] drones = new Drone[droneCount];
+
+        int quadrantCount = CachedQuadrantBounds.Count;
+
+        for (int i = 0; i < droneCount; i++)
+        {
+            Vector2[] quadrantToUse = CachedQuadrantBounds[i % quadrantCount];
+
+            Vector2 randomPosition = Vector2.zero;
+
+            do
+            {
+                randomPosition = new Vector2(
+                    UnityEngine.Random.Range(quadrantToUse[0].x, quadrantToUse[1].x),
+                    UnityEngine.Random.Range(quadrantToUse[2].y, quadrantToUse[0].y));
+
+            }
+            while (Vector2.Distance(GameManager.current.Player.transform.position, randomPosition) < playerDistanceRadius);
+
+
+            Drone spawnedDrone = Instantiate(dronePrefabs[UnityEngine.Random.Range(0, dronePrefabs.Length)], randomPosition, Quaternion.identity);
+            spawnedDrone.SetEnableAgro(withAgroRange);
+
+            drones[i] = spawnedDrone;
+        }
+
+        return drones;
+    }
+
     private void Start()
     {
-        if(AllowAsteroids) SpawnAsteroids(asteroidSpawnCount);
+        //if(AllowAsteroids) SpawnAsteroids(asteroidSpawnCount);
     }
 
     private void SpawnAsteroids(int asteroidSpawnCount) 

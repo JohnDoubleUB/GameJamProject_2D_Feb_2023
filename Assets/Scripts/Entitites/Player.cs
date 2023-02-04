@@ -30,54 +30,75 @@ public class Player : DamageableEntity
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private bool canAccelerate = true;
 
-    //private void Awake()
-    //{
-    //    if (current != null) return;
+    [SerializeField]
+    private bool canUseMouse = true;
 
-    //    current = this;
-    //}
+    [SerializeField]
+    private bool canFire = true;
 
-    private Vector3 GetPredictedPositionInSeconds(float predictionDistance) 
+    private Vector3 GetPredictedPositionInSeconds(float predictionDistance)
     {
         return new Vector2(transform.position.x, transform.position.y) + (rb.velocity * predictionDistance);
     }
 
+
+    public void SetEnableCrosshair(bool enable)
+    {
+        crossHair.SetActive(enable);
+        canUseMouse = enable;
+    }
+
+    public void SetCanFire(bool enable)
+    {
+        canFire = enable;
+    }
+
+    public void SetCanAccelerate(bool enable)
+    {
+        canAccelerate = enable;
+    }
+
     private void Update()
     {
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = transform.position.z;
 
-        Vector3 diff = mousePosition - transform.position;
+        if (canUseMouse)
+        {
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = transform.position.z;
 
-        diff.Normalize();
+            if (crossHair != null)
+                crossHair.transform.position = mousePosition;
 
-        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+            Vector3 diff = mousePosition - transform.position;
+            diff.Normalize();
+            float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rot_z - 90);
+        }
 
-        transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rot_z - 90);
 
         Vector3 newForward = transform.up;
 
-        if (crossHair != null) crossHair.transform.position = mousePosition;
 
-
-        if (Input.GetButton("Accelerate"))
+        if (canAccelerate && Input.GetButton("Accelerate"))
             rb.AddForce(newForward * 2f);
 
         predictedPosition = GetPredictedPositionInSeconds(predictedPositionDistance);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (canFire && Input.GetButtonDown("Fire1"))
         {
-            print("bang");
             Fire();
         }
     }
 
-    private void Fire() 
+    private void Fire()
     {
-        foreach (Transform projectileSpawnLocation in projectileSpawnLocations) 
+        foreach (Transform projectileSpawnLocation in projectileSpawnLocations)
         {
             SpawnProjectile(projectileSpawnLocation);
+            AudioManager.current.AK_PlayEventAt("ShipFire", transform.position);
         }
     }
 
@@ -91,7 +112,10 @@ public class Player : DamageableEntity
 
     protected override void OnDeath(Vector3 hitPosition)
     {
-        Destroy(gameObject);
+        SpawnDeathEffect();
+        gameObject.SetActive(false);
+        UIManager.current.SetActiveContexts(true, UIContext.DeathScreen);
+        //GameManager.current.LoadingLevel = true;
     }
 
     protected override void OnDamage(Vector3 hitPosition)

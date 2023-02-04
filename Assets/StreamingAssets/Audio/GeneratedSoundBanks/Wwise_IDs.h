@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID DRONEFIRE = 4214056565U;
         static const AkUniqueID DRONEMOVEMENT = 1720237598U;
+        static const AkUniqueID DRONEMOVEMENTSTOP = 3201165558U;
         static const AkUniqueID EARTHAMBIENCE = 3287156155U;
         static const AkUniqueID EARTHAMBIENCESTOP = 1135202491U;
         static const AkUniqueID EARTHSONG = 848516368U;

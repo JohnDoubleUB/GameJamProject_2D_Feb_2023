@@ -26,6 +26,11 @@ public class AudioManager : MonoBehaviour
         return AkSoundEngine.PostEvent(eventName, in_gameObjectID);
     }
 
+    public uint AK_PlayClipOnObjectWithEndEventCallback(string eventName, GameObject in_gameObjectID, AkCallbackManager.EventCallback in_pfnCallback)
+    {
+        return AkSoundEngine.PostEvent(eventName, in_gameObjectID, (uint)AkCallbackType.AK_EndOfEvent, in_pfnCallback, in_gameObjectID);
+    }
+
     private void AK_CallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
     {
         switch (in_type)

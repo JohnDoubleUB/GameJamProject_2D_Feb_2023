@@ -189,7 +189,7 @@ MonoBehaviour:
   projectileSpeed: 0.01
   projectileTimeToLive: 5
   animator: {fileID: 9120727047216444117}
-  baseFireInterval: 1.5
+  baseFireInterval: 2
   fireIntervalVariation: 1
 --- !u!50 &8096734237275706898
 Rigidbody2D:

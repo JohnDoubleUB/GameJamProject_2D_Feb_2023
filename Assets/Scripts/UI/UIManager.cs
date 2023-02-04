@@ -136,5 +136,6 @@ public enum UIContext
     Ingame,
     MainMenu,
     PauseMenu,
-    Cutscene
+    Cutscene,
+    DeathScreen
 }

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystem: {fileID: 6082232281601898236}
+  DontPlayAudio: 0
 --- !u!198 &6082232281601898236
 ParticleSystem:
   m_ObjectHideFlags: 0
