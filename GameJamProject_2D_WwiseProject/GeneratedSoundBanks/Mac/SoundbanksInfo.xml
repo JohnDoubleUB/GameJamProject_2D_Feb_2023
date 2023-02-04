@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>../../</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
@@ -22,6 +22,291 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AE8F9C78-687A-6631-54C9-46A6C8390102}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="12255861" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pizza.wav</ShortName>
+					<CachePath>SFX/Pizza_10C4C929.wem</CachePath>
+				</File>
+				<File Id="18580158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HyperDrive.wav</ShortName>
+					<CachePath>SFX/HyperDrive_10C4C929.wem</CachePath>
+				</File>
+				<File Id="92959818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>8. Please Return.wav</ShortName>
+					<CachePath>SFX/8. Please Return_10C4C929.wem</CachePath>
+				</File>
+				<File Id="138126318" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipFire2.wav</ShortName>
+					<CachePath>SFX/ShipFire2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="139546627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>All clicked.wav</ShortName>
+					<CachePath>SFX/All clicked_10C4C929.wem</CachePath>
+				</File>
+				<File Id="157286659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneMovement3.wav</ShortName>
+					<CachePath>SFX/DroneMovement3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="200953183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpaceSong.wav</ShortName>
+					<CachePath>SFX/SpaceSong_10C4C929.wem</CachePath>
+				</File>
+				<File Id="204123510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneMovement2.wav</ShortName>
+					<CachePath>SFX/DroneMovement2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="255114796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Shoe.wav</ShortName>
+					<CachePath>SFX/Shoe_10C4C929.wem</CachePath>
+				</File>
+				<File Id="255711565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneFire4.wav</ShortName>
+					<CachePath>SFX/DroneFire4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="289701651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EarthSong.wav</ShortName>
+					<CachePath>SFX/EarthSong_10C4C929.wem</CachePath>
+				</File>
+				<File Id="301580328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EarthAmbience.wav</ShortName>
+					<CachePath>SFX/EarthAmbience_D1642D69.wem</CachePath>
+				</File>
+				<File Id="310761528" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipFire1.wav</ShortName>
+					<CachePath>SFX/ShipFire1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="326260920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipFire4.wav</ShortName>
+					<CachePath>SFX/ShipFire4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="336280658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneMovement1.wav</ShortName>
+					<CachePath>SFX/DroneMovement1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="425961116" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneFire1.wav</ShortName>
+					<CachePath>SFX/DroneFire1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="543206894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Newspaper.wav</ShortName>
+					<CachePath>SFX/Newspaper_10C4C929.wem</CachePath>
+				</File>
+				<File Id="602539061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipRumble.wav</ShortName>
+					<CachePath>SFX/ShipRumble_10C4C929.wem</CachePath>
+				</File>
+				<File Id="648921039" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>9. Wow.wav</ShortName>
+					<CachePath>SFX/9. Wow_10C4C929.wem</CachePath>
+				</File>
+				<File Id="682361246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipWoosh.wav</ShortName>
+					<CachePath>SFX/ShipWoosh_10C4C929.wem</CachePath>
+				</File>
+				<File Id="683186627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>2. Before We.wav</ShortName>
+					<CachePath>SFX/2. Before We_10C4C929.wem</CachePath>
+				</File>
+				<File Id="716498928" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>7. In Fact.wav</ShortName>
+					<CachePath>SFX/7. In Fact_10C4C929.wem</CachePath>
+				</File>
+				<File Id="724156831" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>4. Amazing.wav</ShortName>
+					<CachePath>SFX/4. Amazing_10C4C929.wem</CachePath>
+				</File>
+				<File Id="738733007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>5. You May.wav</ShortName>
+					<CachePath>SFX/5. You May_10C4C929.wem</CachePath>
+				</File>
+				<File Id="744866416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Phone.wav</ShortName>
+					<CachePath>SFX/Phone_10C4C929.wem</CachePath>
+				</File>
+				<File Id="807510312" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>15. What What.wav</ShortName>
+					<CachePath>SFX/15. What What_10C4C929.wem</CachePath>
+				</File>
+				<File Id="815899688" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>6. On to.wav</ShortName>
+					<CachePath>SFX/6. On to_10C4C929.wem</CachePath>
+				</File>
+				<File Id="818391993" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneFire2.wav</ShortName>
+					<CachePath>SFX/DroneFire2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="851250987" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>3. With all.wav</ShortName>
+					<CachePath>SFX/3. With all_10C4C929.wem</CachePath>
+				</File>
+				<File Id="879573503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Big Ben.wav</ShortName>
+					<CachePath>SFX/Big Ben_10C4C929.wem</CachePath>
+				</File>
+				<File Id="894433988" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion.wav</ShortName>
+					<CachePath>SFX/Explosion_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1006410069" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ShipFire3.wav</ShortName>
+					<CachePath>SFX/ShipFire3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1018605551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1. Hello Trainee.wav</ShortName>
+					<CachePath>SFX/1. Hello Trainee_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1073379836" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DroneFire3.wav</ShortName>
+					<CachePath>SFX/DroneFire3_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4214056565" Name="DroneFire" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="255711565"/>
+						<MediaRef Id="425961116"/>
+						<MediaRef Id="818391993"/>
+						<MediaRef Id="1073379836"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1720237598" Name="DroneMovement" DurationType="OneShot" DurationMin="5.1249886" DurationMax="6">
+					<MediaRefs>
+						<MediaRef Id="157286659"/>
+						<MediaRef Id="204123510"/>
+						<MediaRef Id="336280658"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3287156155" Name="EarthAmbience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="301580328"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1135202491" Name="EarthAmbienceStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="848516368" Name="EarthSong" DurationType="OneShot" DurationMin="106" DurationMax="106">
+					<MediaRefs>
+						<MediaRef Id="289701651"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2139794104" Name="EarthSongStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="13776098" Name="Explosion" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="894433988"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2734475931" Name="HyperDrive" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<MediaRefs>
+						<MediaRef Id="18580158"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3203412995" Name="ShipFire" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="138126318"/>
+						<MediaRef Id="310761528"/>
+						<MediaRef Id="326260920"/>
+						<MediaRef Id="1006410069"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2117307804" Name="ShipRumble" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="602539061"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1751418741" Name="ShipWoosh" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="682361246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="673226934" Name="SpaceSong" DurationType="OneShot" DurationMin="128" DurationMax="128">
+					<MediaRefs>
+						<MediaRef Id="200953183"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1397429982" Name="SpaceSongStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="644359727" Name="VA1" DurationType="OneShot" DurationMin="14" DurationMax="14">
+					<MediaRefs>
+						<MediaRef Id="1018605551"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2767461320" Name="VA15" DurationType="OneShot" DurationMin="13" DurationMax="13">
+					<MediaRefs>
+						<MediaRef Id="807510312"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359724" Name="VA2" DurationType="OneShot" DurationMin="18" DurationMax="18">
+					<MediaRefs>
+						<MediaRef Id="683186627"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359725" Name="VA3" DurationType="OneShot" DurationMin="6" DurationMax="6">
+					<MediaRefs>
+						<MediaRef Id="851250987"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359722" Name="VA4" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="724156831"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359723" Name="VA5" DurationType="OneShot" DurationMin="7" DurationMax="7">
+					<MediaRefs>
+						<MediaRef Id="738733007"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359720" Name="VA6" DurationType="OneShot" DurationMin="13" DurationMax="13">
+					<MediaRefs>
+						<MediaRef Id="815899688"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359721" Name="VA7" DurationType="OneShot" DurationMin="25" DurationMax="25">
+					<MediaRefs>
+						<MediaRef Id="716498928"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359718" Name="VA8" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="92959818"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="644359719" Name="VA9" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<MediaRefs>
+						<MediaRef Id="648921039"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2510255154" Name="VAAllClicked" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<MediaRefs>
+						<MediaRef Id="139546627"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="421286007" Name="VABigBen" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="879573503"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1508793495" Name="VANewsPaper" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<MediaRefs>
+						<MediaRef Id="543206894"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1510088570" Name="VAPhone" DurationType="OneShot" DurationMin="12" DurationMax="12">
+					<MediaRefs>
+						<MediaRef Id="744866416"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3534406808" Name="VAPizza" DurationType="OneShot" DurationMin="12" DurationMax="12">
+					<MediaRefs>
+						<MediaRef Id="12255861"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="89164611" Name="VAShoe" DurationType="OneShot" DurationMin="7" DurationMax="7">
+					<MediaRefs>
+						<MediaRef Id="255114796"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7F945BA3-621C-562D-E216-0C61C11B34B2}</FileHash>
+	<FileHash>{4D29AC21-48F3-25E6-47A0-976E4ECA45C0}</FileHash>
 </SoundBanksInfo>

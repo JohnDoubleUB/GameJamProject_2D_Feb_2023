@@ -12,16 +12,779 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa5f76a170197640a0a2f6bd7686fc9, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 97a61176c3424746bf67a014eac0e04f
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 97a61176c3424746bf67a014eac0e04f
+    GuidInternal: 
+    m_lastTime: -8585261736164671091
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 42a7d6c67285bc44b5e5d9753b30d75a
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 42a7d6c67285bc44b5e5d9753b30d75a
+    GuidInternal: 
+    m_lastTime: -8585261736165001634
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 42a7d6c67285bc44b5e5d9753b30d75a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 41039ff936e46e449744d01e57fd02ed
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 41039ff936e46e449744d01e57fd02ed
+    GuidInternal: 
+    m_lastTime: -8585260761482869045
+    List:
+    - name: Main
+      guid: 5569348834542e4191f6acad32bc4ac9
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 41039ff936e46e449744d01e57fd02ed
+      - ElementName: Main
+        ObjectType: 7
+        guid: 5569348834542e4191f6acad32bc4ac9
+      Path: SoundBanks\Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b51c7c3624bd9d448c1f22ebc5276c3e
+    ParentPath: Events\Default Work Unit
+    guid: b51c7c3624bd9d448c1f22ebc5276c3e
+    GuidInternal: 
+    m_lastTime: -8585260762622813488
+    List:
+    - name: DroneFire
+      guid: c8a3e0e78d081049ab6879937271adcd
+      id: 4214056565
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: DroneFire
+        ObjectType: 3
+        guid: c8a3e0e78d081049ab6879937271adcd
+      Path: Events\Default Work Unit\SpaceSFX\DroneFire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DroneMovement
+      guid: d66e4d6fa442484f83832f72d3d4df49
+      id: 1720237598
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: DroneMovement
+        ObjectType: 3
+        guid: d66e4d6fa442484f83832f72d3d4df49
+      Path: Events\Default Work Unit\SpaceSFX\DroneMovement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EarthAmbience
+      guid: 93f2aa6ede9b484a922c060a5a3f0b5d
+      id: 3287156155
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      - ElementName: EarthAmbience
+        ObjectType: 3
+        guid: 93f2aa6ede9b484a922c060a5a3f0b5d
+      Path: Events\Default Work Unit\EarthSFX\EarthAmbience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EarthAmbienceStop
+      guid: 1aae1e69f971d34183fd18d2524fcb5f
+      id: 1135202491
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      - ElementName: EarthAmbienceStop
+        ObjectType: 3
+        guid: 1aae1e69f971d34183fd18d2524fcb5f
+      Path: Events\Default Work Unit\EarthSFX\EarthAmbienceStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EarthSFX
+      guid: a18dc518fbfddc44b8d800bdb74e8823
+      id: 2154587664
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      Path: Events\Default Work Unit\EarthSFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EarthSong
+      guid: 10e7d0cc01385e4e8f74d35022010268
+      id: 848516368
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      - ElementName: EarthSong
+        ObjectType: 3
+        guid: 10e7d0cc01385e4e8f74d35022010268
+      Path: Events\Default Work Unit\EarthSFX\EarthSong
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EarthSongStop
+      guid: f70d3c0576ebb141b57f6b8bb6b20e23
+      id: 2139794104
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      - ElementName: EarthSongStop
+        ObjectType: 3
+        guid: f70d3c0576ebb141b57f6b8bb6b20e23
+      Path: Events\Default Work Unit\EarthSFX\EarthSongStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Explosion
+      guid: 3f4037ff571f7e4b82ecdfd30c02ea67
+      id: 13776098
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: Explosion
+        ObjectType: 3
+        guid: 3f4037ff571f7e4b82ecdfd30c02ea67
+      Path: Events\Default Work Unit\SpaceSFX\Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: HyperDrive
+      guid: da7be46512e9844cb9c98e8c71c94dca
+      id: 2734475931
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: HyperDrive
+        ObjectType: 3
+        guid: da7be46512e9844cb9c98e8c71c94dca
+      Path: Events\Default Work Unit\SpaceSFX\HyperDrive
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ShipFire
+      guid: 6578323386c3c645aed11e0354ff97ed
+      id: 3203412995
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: ShipFire
+        ObjectType: 3
+        guid: 6578323386c3c645aed11e0354ff97ed
+      Path: Events\Default Work Unit\SpaceSFX\ShipFire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ShipRumble
+      guid: 6a18e6144cd943418604ea3f666d3341
+      id: 2117307804
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: ShipRumble
+        ObjectType: 3
+        guid: 6a18e6144cd943418604ea3f666d3341
+      Path: Events\Default Work Unit\SpaceSFX\ShipRumble
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ShipWoosh
+      guid: fa279ab06236614ab9a6ee7751f2df18
+      id: 1751418741
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: ShipWoosh
+        ObjectType: 3
+        guid: fa279ab06236614ab9a6ee7751f2df18
+      Path: Events\Default Work Unit\SpaceSFX\ShipWoosh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceSFX
+      guid: e23656314dd2134fa5e7218bb0979f90
+      id: 1104473490
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      Path: Events\Default Work Unit\SpaceSFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceSong
+      guid: 70c3e4511525e94b92ea891ec43592eb
+      id: 673226934
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: SpaceSong
+        ObjectType: 3
+        guid: 70c3e4511525e94b92ea891ec43592eb
+      Path: Events\Default Work Unit\SpaceSFX\SpaceSong
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpaceSongStop
+      guid: 11a28cb85aaa094e91ec2c33e2fee5d3
+      id: 1397429982
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: SpaceSFX
+        ObjectType: 4
+        guid: e23656314dd2134fa5e7218bb0979f90
+      - ElementName: SpaceSongStop
+        ObjectType: 3
+        guid: 11a28cb85aaa094e91ec2c33e2fee5d3
+      Path: Events\Default Work Unit\SpaceSFX\SpaceSongStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA1
+      guid: 0b62525d1f47ee45b7e94c5f5ae69012
+      id: 644359727
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA1
+        ObjectType: 3
+        guid: 0b62525d1f47ee45b7e94c5f5ae69012
+      Path: Events\Default Work Unit\VAEvents\VA1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA15
+      guid: 5f7aad3a557ca946a9388346cccbf58d
+      id: 2767461320
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA15
+        ObjectType: 3
+        guid: 5f7aad3a557ca946a9388346cccbf58d
+      Path: Events\Default Work Unit\VAEvents\VA15
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA2
+      guid: 0b90a7af4b4d8442ad235bec41cdea4c
+      id: 644359724
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA2
+        ObjectType: 3
+        guid: 0b90a7af4b4d8442ad235bec41cdea4c
+      Path: Events\Default Work Unit\VAEvents\VA2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA3
+      guid: 9fded5d74b816249a4c17ebc83e8e2eb
+      id: 644359725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA3
+        ObjectType: 3
+        guid: 9fded5d74b816249a4c17ebc83e8e2eb
+      Path: Events\Default Work Unit\VAEvents\VA3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA4
+      guid: 8dde555a9a7d154cb178db891848f3ac
+      id: 644359722
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA4
+        ObjectType: 3
+        guid: 8dde555a9a7d154cb178db891848f3ac
+      Path: Events\Default Work Unit\VAEvents\VA4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA5
+      guid: 4ffcf4c8bbd3914bbbc178d5b369c7db
+      id: 644359723
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA5
+        ObjectType: 3
+        guid: 4ffcf4c8bbd3914bbbc178d5b369c7db
+      Path: Events\Default Work Unit\VAEvents\VA5
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA6
+      guid: 336a9a1a2109f940a3ac73737b1a7d46
+      id: 644359720
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA6
+        ObjectType: 3
+        guid: 336a9a1a2109f940a3ac73737b1a7d46
+      Path: Events\Default Work Unit\VAEvents\VA6
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA7
+      guid: d6b0480ed79e64418a10004f5a15d504
+      id: 644359721
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA7
+        ObjectType: 3
+        guid: d6b0480ed79e64418a10004f5a15d504
+      Path: Events\Default Work Unit\VAEvents\VA7
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA8
+      guid: e48d95bc93b0804589c6e859b3885461
+      id: 644359718
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA8
+        ObjectType: 3
+        guid: e48d95bc93b0804589c6e859b3885461
+      Path: Events\Default Work Unit\VAEvents\VA8
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VA9
+      guid: 5753cd4db909c447b871d62cf3490860
+      id: 644359719
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VA9
+        ObjectType: 3
+        guid: 5753cd4db909c447b871d62cf3490860
+      Path: Events\Default Work Unit\VAEvents\VA9
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VAAllClicked
+      guid: fee5a7679c4c824589a7c5ec12bbb19a
+      id: 2510255154
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VAAllClicked
+        ObjectType: 3
+        guid: fee5a7679c4c824589a7c5ec12bbb19a
+      Path: Events\Default Work Unit\VAEvents\VAAllClicked
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VABigBen
+      guid: f834099b518f4c44a7ef91b453aef3ef
+      id: 421286007
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VABigBen
+        ObjectType: 3
+        guid: f834099b518f4c44a7ef91b453aef3ef
+      Path: Events\Default Work Unit\VAEvents\VABigBen
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VAEvents
+      guid: 5b80db765e1e624682ae53e34c4cb71f
+      id: 1627411193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      Path: Events\Default Work Unit\VAEvents
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VANewsPaper
+      guid: 1d1944f1ad10124c99b877b754ee896f
+      id: 1508793495
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VANewsPaper
+        ObjectType: 3
+        guid: 1d1944f1ad10124c99b877b754ee896f
+      Path: Events\Default Work Unit\VAEvents\VANewsPaper
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VAPhone
+      guid: bfe8c5d49878fc4699a89a0e1e3ef4cf
+      id: 1510088570
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VAPhone
+        ObjectType: 3
+        guid: bfe8c5d49878fc4699a89a0e1e3ef4cf
+      Path: Events\Default Work Unit\VAEvents\VAPhone
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VAPizza
+      guid: 98199115f508ef4d8bbd53e248a9bcb1
+      id: 3534406808
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VAPizza
+        ObjectType: 3
+        guid: 98199115f508ef4d8bbd53e248a9bcb1
+      Path: Events\Default Work Unit\VAEvents\VAPizza
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VAShoe
+      guid: 844552f14889ea45b507f2ba2a6041a7
+      id: 89164611
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: VAEvents
+        ObjectType: 4
+        guid: 5b80db765e1e624682ae53e34c4cb71f
+      - ElementName: VAShoe
+        ObjectType: 3
+        guid: 844552f14889ea45b507f2ba2a6041a7
+      Path: Events\Default Work Unit\VAEvents\VAShoe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 3a9d3bb790a9fe43814bf6484bb59cf7
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 3a9d3bb790a9fe43814bf6484bb59cf7
+    GuidInternal: 
+    m_lastTime: -8585261736164891609
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: dfcf7b52a1d00e4dbc591a39038b4575
+    ParentPath: States\Default Work Unit
+    guid: dfcf7b52a1d00e4dbc591a39038b4575
+    GuidInternal: 
+    m_lastTime: -8585261736164761117
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 38766f32900ced4385fdab94d024285c
+    ParentPath: Switches\Default Work Unit
+    guid: 38766f32900ced4385fdab94d024285c
+    GuidInternal: 
+    m_lastTime: -8585261736164951629
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6039546b2291894e90a3cd9a57f289bc
+    ParentPath: Triggers\Default Work Unit
+    guid: 6039546b2291894e90a3cd9a57f289bc
+    GuidInternal: 
+    m_lastTime: -8585261736164741104
+    List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

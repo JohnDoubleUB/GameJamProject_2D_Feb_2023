@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F99F0341-E436-446E-9744-D01E57FD02ED}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{F99F0341-E436-446E-9744-D01E57FD02ED}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F99F0341-E436-446E-9744-D01E57FD02ED}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{88346955-5434-412E-91F6-ACAD32BC4AC9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="EarthSFX" ID="{18C58DA1-FDFB-44DC-B8D8-00BDB74E8823}" WorkUnitID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VAEvents" ID="{76DB805B-1E5E-4662-82AE-53E34C4CB71F}" WorkUnitID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpaceSFX" ID="{315636E2-D24D-4F13-A5E7-218BB0979F90}" WorkUnitID="{367C1CB5-BD24-449D-8C1F-22EBC5276C3E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
