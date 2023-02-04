@@ -8,7 +8,7 @@ public class Player : DamageableEntity
 {
     public Projectile projectilePrefab;
 
-    public static Player current;
+    //public static Player current;
 
     public Vector3 mousePosition;
     public GameObject crossHair;
@@ -27,12 +27,12 @@ public class Player : DamageableEntity
 
     public Vector3 PredictedPosition => predictedPosition;
 
-    private void Awake()
-    {
-        if (current != null) return;
+    //private void Awake()
+    //{
+    //    if (current != null) return;
 
-        current = this;
-    }
+    //    current = this;
+    //}
 
     private Vector3 GetPredictedPositionInSeconds(float predictionDistance) 
     {
@@ -85,7 +85,7 @@ public class Player : DamageableEntity
         newProjectile.SetTimeToLive(projectileTimeToLive);
     }
 
-    public override void OnDeath()
+    protected override void OnDeath()
     {
         Destroy(gameObject);
     }

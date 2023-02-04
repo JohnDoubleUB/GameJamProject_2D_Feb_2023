@@ -190,7 +190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab4921763257f6489886d540b219fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  health: 3
+  destroyEffectPrefab: {fileID: 0}
+  spawnEffectOnDestroy: 1
   projectilePrefab: {fileID: 5444981808789670549, guid: 7d907a1095eb20841bb62a87cce6c734, type: 3}
   mousePosition: {x: 0, y: 0, z: 0}
   crossHair: {fileID: 0}

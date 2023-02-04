@@ -44,7 +44,7 @@ public class Drone : DamageableEntity
 
     private void Update()
     {
-        Vector3 playerPosition = usePredictedPosition ? Player.current.PredictedPosition : Player.current.transform.position;
+        Vector3 playerPosition = usePredictedPosition ? GameManager.current.Player.PredictedPosition : GameManager.current.Player.transform.position;
 
         Quaternion targetRotation = GetRotationToTarget(playerPosition);
         
@@ -111,7 +111,7 @@ public class Drone : DamageableEntity
         return Quaternion.Euler(transform.rotation.x, transform.rotation.y, rot_z - 90);
     }
 
-    public override void OnDeath()
+    protected override void OnDeath()
     {
         Destroy(gameObject);
     }
