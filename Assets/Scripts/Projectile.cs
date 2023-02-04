@@ -14,6 +14,8 @@ public class Projectile : MonoBehaviour
     private float timeToLive;
     private float currentTimeToLive;
 
+    private bool isVisible = true;
+
 
     [SerializeField]
     private LayerMask validLayerMasks;
@@ -25,6 +27,9 @@ public class Projectile : MonoBehaviour
     private string[] validTags;
     [SerializeField]
     private string borderTag;
+
+    [SerializeField]
+    private EffectObject EffectPrefab;
 
     private void Update()
     {
@@ -46,13 +51,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Owner == null)
-            return;
-
-        //if (Owner.gameObject == collision.gameObject)
-        //    return;
-
-        if (Owner.layer == collision.gameObject.layer)
+        if (Owner != null && Owner.layer == collision.gameObject.layer)
             return;
 
         if (IsInLayerMask(collision.gameObject.layer, borderLayerMask))
@@ -65,7 +64,7 @@ public class Projectile : MonoBehaviour
             if (collision.gameObject.TryGetComponent(out DamageableEntity damageableEntity) == false) 
                 return;
 
-            damageableEntity.Damage();
+            damageableEntity.Damage(transform.position);
             Destroy(gameObject);
         }
     }
@@ -79,12 +78,23 @@ public class Projectile : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        Destroy(gameObject);
+        isVisible = false;
+    }
+
+    private void OnBecameVisible()
+    {
+        isVisible = true;
     }
 
     private void OnDestroy()
     {
-        print("cool effect");
+        if (EffectPrefab == null)
+            return;
+
+        if (isVisible == false)
+            return;
+
+        Instantiate(EffectPrefab, transform.position, transform.rotation);
     }
 
     public static bool IsInLayerMask(int layer, LayerMask layermask)

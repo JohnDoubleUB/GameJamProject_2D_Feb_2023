@@ -27,6 +27,10 @@ public class Player : DamageableEntity
 
     public Vector3 PredictedPosition => predictedPosition;
 
+    [SerializeField]
+    private Animator animator;
+
+
     //private void Awake()
     //{
     //    if (current != null) return;
@@ -85,8 +89,13 @@ public class Player : DamageableEntity
         newProjectile.SetTimeToLive(projectileTimeToLive);
     }
 
-    protected override void OnDeath()
+    protected override void OnDeath(Vector3 hitPosition)
     {
         Destroy(gameObject);
+    }
+
+    protected override void OnDamage(Vector3 hitPosition)
+    {
+        animator.Play("Hit");
     }
 }

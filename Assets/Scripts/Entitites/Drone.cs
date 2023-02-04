@@ -17,6 +17,8 @@ public class Drone : DamageableEntity
     public float projectileSpeed = 0.01f;
     public float projectileTimeToLive = 5f;
 
+    [SerializeField]
+    private Animator animator;
 
     private float minumumAimAngle = 70f;
     private float aimAngleMinModifier = 10f;
@@ -29,7 +31,8 @@ public class Drone : DamageableEntity
     private float fireInterval;
 
     private float maxDistanceFromPlayer = 6f;
-    private float minDistanceFromPlayer;
+    private float maxFireDistance = 15f;
+    private float agroDistance = 20f;
 
     private void Start()
     {
@@ -44,46 +47,51 @@ public class Drone : DamageableEntity
 
     private void Update()
     {
+
         Vector3 playerPosition = usePredictedPosition ? GameManager.current.Player.PredictedPosition : GameManager.current.Player.transform.position;
-
-        Quaternion targetRotation = GetRotationToTarget(playerPosition);
-        
-        float playerAimAngle = Quaternion.Angle(transform.rotation, targetRotation);
-
-        float offAngleModifier = Mathf.Clamp(Mathf.Abs(playerAimAngle).Remap(aimAngleMinModifier, aimAngleMaxModifier, 1f, 4f), 1, 4f);
-
-        float rotationModifier = TurnTimeMultiplier * offAngleModifier; 
-
-        //Rotate towards player
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotationModifier);
-
-      
 
         float distanceToPlayer = Vector3.Distance(transform.position, playerPosition);
 
-        if (distanceToPlayer > maxDistanceFromPlayer)
+        if (distanceToPlayer < agroDistance)
         {
-            rb.AddForce(transform.up * 0.5f);
-        }
-        else 
-        {
-            rb.AddForce(transform.up * offAngleModifier.Remap(1f, 4f, 0, 1));
-        }
+            Quaternion targetRotation = GetRotationToTarget(playerPosition);
+            float playerAimAngle = Quaternion.Angle(transform.rotation, targetRotation);
 
-        if (playerAimAngle < minumumAimAngle)
-        {
-            if (fireInterval < currentFireInterval)
+            float offAngleModifier = Mathf.Clamp(Mathf.Abs(playerAimAngle).Remap(aimAngleMinModifier, aimAngleMaxModifier, 1f, 4f), 1, 4f);
+
+            float rotationModifier = TurnTimeMultiplier * offAngleModifier;
+
+            //Rotate towards player
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotationModifier);
+
+
+
+
+
+            if (distanceToPlayer > maxDistanceFromPlayer)
             {
-                fireInterval += Time.deltaTime;
+                rb.AddForce(transform.up * 0.5f);
             }
-            else 
+            else
             {
-                Fire();
+                rb.AddForce(transform.up * offAngleModifier.Remap(1f, 4f, 0, 1));
             }
-        }
-        else 
-        {
-            fireInterval = 0f;
+
+            if (playerAimAngle < minumumAimAngle && distanceToPlayer < maxFireDistance)
+            {
+                if (fireInterval < currentFireInterval)
+                {
+                    fireInterval += Time.deltaTime;
+                }
+                else
+                {
+                    Fire();
+                }
+            }
+            else
+            {
+                fireInterval = 0f;
+            }
         }
     }
 
@@ -111,8 +119,13 @@ public class Drone : DamageableEntity
         return Quaternion.Euler(transform.rotation.x, transform.rotation.y, rot_z - 90);
     }
 
-    protected override void OnDeath()
+    protected override void OnDeath(Vector3 hitPosition)
     {
         Destroy(gameObject);
+    }
+
+    protected override void OnDamage(Vector3 hitPosition)
+    {
+        animator.Play("Hit");
     }
 }

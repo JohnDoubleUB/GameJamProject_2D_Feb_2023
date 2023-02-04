@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
         if (objectToFollow == null || objectToFollow2 == null)
             return;
 
-        Vector3 targetPosition = Vector3.Lerp(objectToFollow.position, objectToFollow2.position, 0.5f);
+        Vector3 targetPosition = Vector3.Lerp(objectToFollow.position, objectToFollow2.position, 0.8f);
         targetPosition.z = transform.position.z;
 
         float distanceAppart = Vector3.Distance(objectToFollow.position, objectToFollow2.position);

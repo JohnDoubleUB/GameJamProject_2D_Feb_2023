@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Asteroid
   - Border
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Enemy
   - Asteroid
   - Border
-  - 
+  - Projectile
   - 
   - 
   - 
@@ -41,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 253420809
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Explosion
+    uniqueID: 3723670205
     locked: 0

@@ -15,28 +15,30 @@ public abstract class DamageableEntity : MonoBehaviour
     public event HealthUpdate OnHealthUpdate;
 
     [SerializeField]
-    private GameObject destroyEffectPrefab;
+    private EffectObject destroyEffectPrefab;
     
     [SerializeField]
     private bool spawnEffectOnDestroy = true;
 
 
 
-    public void Damage() 
+    public virtual void Damage(Vector3 hitPosition) 
     {
         health = Mathf.Max(health - 1, 0);
 
         bool hasDied = health == 0;
 
         OnHealthUpdate?.Invoke(health, hasDied);
-
+        OnDamage(hitPosition);
         if (hasDied) 
         {
-            OnDeath();
+            OnDeath(hitPosition);
         }
     }
 
-    protected abstract void OnDeath();
+    protected abstract void OnDeath(Vector3 hitPosition);
+
+    protected virtual void OnDamage(Vector3 hitPosition) { }
 
     protected void OnDestroy()
     {

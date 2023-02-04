@@ -70,6 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210889732988805865}
   - component: {fileID: 2264549261314800785}
+  - component: {fileID: 8192541174705816099}
   m_Layer: 6
   m_Name: PlayerShip2
   m_TagString: Untagged
@@ -142,6 +143,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8192541174705816099
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793586904237518183}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4282b9ec4edbd4744b0db577ec1b42ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7519436544388144491
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyEffectPrefab: {fileID: 0}
+  destroyEffectPrefab: {fileID: 6082232281601898227, guid: d6835302bfac1434fb60bbb6474ad637, type: 3}
   spawnEffectOnDestroy: 1
   projectilePrefab: {fileID: 5444981808789670549, guid: 7d907a1095eb20841bb62a87cce6c734, type: 3}
   mousePosition: {x: 0, y: 0, z: 0}
@@ -201,8 +221,9 @@ MonoBehaviour:
   projectileSpawnLocations:
   - {fileID: 2401720697172531302}
   - {fileID: 6414147012710694103}
-  projectileTimeToLive: 1
+  projectileTimeToLive: 0.4
   projectileSpeed: 0.1
+  animator: {fileID: 8192541174705816099}
 --- !u!50 &7519436544388144278
 Rigidbody2D:
   serializedVersion: 4
@@ -222,7 +243,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &6436522793709982487
 CircleCollider2D:
@@ -239,4 +260,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.74
+  m_Radius: 0.87
