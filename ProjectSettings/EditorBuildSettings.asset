@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: f9daa1508f9c58d43bbe413362044149
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/PointAndClick.unity
     guid: 737baa3478fbea8408a78d805d6acb04
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f3764faf2716aba4384103ce6c173aa6, type: 2}

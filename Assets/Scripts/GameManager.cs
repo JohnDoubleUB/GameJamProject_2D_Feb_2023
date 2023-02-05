@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager current;
 
+    [SerializeField]
+    private bool isPaused;
+
+    public bool IsPaused => isPaused;
+
     public Player Player;
 
     [SerializeField]
@@ -48,6 +53,9 @@ public class GameManager : MonoBehaviour
     {
         if (current != null) Debug.LogWarning("Oops! it looks like there might already be a " + GetType().Name + " in this scene!");
         current = this;
+
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;// ? does this fix the initial mouse visibility issue?
 
         ProgressionSave = new SaveSystem<int>()
         {
@@ -148,21 +156,8 @@ public class GameManager : MonoBehaviour
 
     public void ReloadLevel() 
     {
-        //loadingLevel = true;
-        //QuadrantManager.current.RemoveAllAsteroids();
-        
-        //foreach (Drone drone in objectiveDrones) 
-        //{
-        //    if (drone == null)
-        //        continue;
-
-        //    Destroy(drone.gameObject);
-        //}
-
         UnityEngine.SceneManagement.Scene scene = SceneManager.GetActiveScene();
-
         LoadLevel(scene);
-        //SceneManager.LoadScene(scene.name);
     }
 
     public void LoadLevel(UnityEngine.SceneManagement.Scene scene) 
@@ -336,6 +331,15 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         QuestUpdate(questProgression);
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            print("hjere");
+            isPaused = !isPaused;
+            Cursor.visible = isPaused;// ? does this fix the initial mouse visibility issue?
+        }
+
+        UIManager.current.SetActiveContexts(isPaused, UIContext.PauseMenu);
     }
 
 
@@ -355,7 +359,7 @@ public class GameManager : MonoBehaviour
 
     private void PlayerDeath()
     {
-
+        Cursor.visible = true;
     }
 
     private void OnDestroy()

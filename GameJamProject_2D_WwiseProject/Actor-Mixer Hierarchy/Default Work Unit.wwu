@@ -1064,6 +1064,7 @@
 				<Sound Name="EarthSong" ID="{228903D3-7DC3-44A4-A268-C115D508BBA6}" ShortID="217883777">
 					<PropertyList>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>

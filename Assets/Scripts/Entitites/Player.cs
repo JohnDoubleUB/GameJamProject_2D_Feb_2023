@@ -8,6 +8,11 @@ public class Player : DamageableEntity
 {
     public Projectile projectilePrefab;
 
+    public GameObject shipFire;
+
+    public float minFireSize = 0;
+    public float maxFireSize = 0;
+
     [SerializeField]
     private float movementSpeed = 1f;
 
@@ -74,6 +79,17 @@ public class Player : DamageableEntity
 
     private void Update()
     {
+        if (GameManager.current.IsPaused) 
+            return;
+
+        if (shipFire != null)
+        {
+            float magnitudeValue = Mathf.Min(1, rb.velocity.magnitude);//Mathf.Clamp(rb.velocity.magnitude.Remap(0, 2, minFireSize, maxFireSize), minFireSize, maxFireSize);
+            Vector3 newScale = Vector3.one * magnitudeValue;
+            shipFire.transform.localScale = newScale;
+        }
+
+
 
         if (canUseMouse)
         {

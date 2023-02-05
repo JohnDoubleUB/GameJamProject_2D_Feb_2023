@@ -7,6 +7,12 @@ public class Drone : DamageableEntity
     public Projectile projectilePrefab;
 
     [SerializeField]
+    private SpriteRenderer spriteRenderer;
+
+    [SerializeField]
+    private Sprite[] droneSprites;
+
+    [SerializeField]
     private float movementSpeed = 0.5f;
 
     public Rigidbody2D rb;
@@ -48,6 +54,11 @@ public class Drone : DamageableEntity
     {
         //Generate fire interval
         currentFireInterval = GenerateFireInterval(baseFireInterval, fireIntervalVariation);
+
+        if (spriteRenderer != null) 
+        {
+            spriteRenderer.sprite = droneSprites[UnityEngine.Random.Range(0, droneSprites.Length)];
+        }
     }
 
     private float GenerateFireInterval(float fireInterval, float fireIntervalVariation) 

@@ -183,6 +183,12 @@ MonoBehaviour:
   destroyEffectPrefab: {fileID: 6082232281601898227, guid: d6835302bfac1434fb60bbb6474ad637, type: 3}
   spawnEffectOnDestroy: 1
   projectilePrefab: {fileID: 5444981808789670549, guid: 7d907a1095eb20841bb62a87cce6c734, type: 3}
+  spriteRenderer: {fileID: 584647481580891334}
+  droneSprites:
+  - {fileID: 21300000, guid: be1e997da9e8cec4ea3ff0051c575c5d, type: 3}
+  - {fileID: 21300000, guid: 443aee3f77ee0ec47bc1ea9a611573a3, type: 3}
+  - {fileID: 21300000, guid: 8b53a2149bd52814f9373487fc480cf1, type: 3}
+  movementSpeed: 0.5
   rb: {fileID: 8096734237275706898}
   projectileSpawnLocation: {fileID: 1236544312584043224}
   usePredictedPosition: 1

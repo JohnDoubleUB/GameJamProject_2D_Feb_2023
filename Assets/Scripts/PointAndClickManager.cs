@@ -19,14 +19,25 @@ public class PointAndClickManager : MonoBehaviour
 
     [SerializeField]
     private Image previewImage;
+    
+    private bool isPaused;
 
     private void Start()
     {
         InitiateProgress(pAndCProgression);
+        Cursor.visible = true;
     }
 
     private void Update()
     {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            isPaused = !isPaused;// ? does this fix the initial mouse visibility issue?
+        }
+
+        UIManager.current.SetActiveContexts(isPaused, UIContext.PauseMenu);
+
+
         if (pAndCProgression == 2) 
         {
             if (interactedObjects == interactiveElements.Length) 
@@ -117,7 +128,6 @@ public class PointAndClickManager : MonoBehaviour
         AudioManager.current.AK_PlayClipOnObject("EarthAmbienceStop", gameObject);
         AudioManager.current.AK_PlayClipOnObject("EarthSongStop", gameObject);
         AkSoundEngine.StopAll();
-
     }
 }
 

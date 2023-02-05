@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D2B93A9B-9EAC-FAD3-A386-767A7F5FAE09}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{34A7DA7B-0496-EAFC-86DC-C7D02DE561D5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -72,7 +72,7 @@
 				</File>
 				<File Id="289701651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EarthSong.wav</ShortName>
-					<CachePath>SFX/EarthSong_10C4C929.wem</CachePath>
+					<CachePath>SFX/EarthSong_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="301580328" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EarthAmbience.wav</ShortName>
@@ -195,7 +195,7 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1135202491" Name="EarthAmbienceStop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="848516368" Name="EarthSong" DurationType="OneShot" DurationMin="106" DurationMax="106">
+				<Event Id="848516368" Name="EarthSong" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="289701651"/>
 					</MediaRefs>
@@ -318,5 +318,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DB7D6247-5BCD-229A-FB0F-D54D61EDCC7B}</FileHash>
+	<FileHash>{1A49E02C-7BFE-90BB-526F-96A2159FCB2C}</FileHash>
 </SoundBanksInfo>
