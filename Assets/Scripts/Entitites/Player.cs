@@ -8,6 +8,9 @@ public class Player : DamageableEntity
 {
     public Projectile projectilePrefab;
 
+    [SerializeField]
+    private float movementSpeed = 1f;
+
     //public static Player current;
 
     public Vector3 mousePosition;
@@ -39,6 +42,9 @@ public class Player : DamageableEntity
     [SerializeField]
     private bool canFire = true;
 
+    [SerializeField]
+    private bool playerCanDie = true;
+
     private Vector3 GetPredictedPositionInSeconds(float predictionDistance)
     {
         return new Vector2(transform.position.x, transform.position.y) + (rb.velocity * predictionDistance);
@@ -59,6 +65,11 @@ public class Player : DamageableEntity
     public void SetCanAccelerate(bool enable)
     {
         canAccelerate = enable;
+    }
+
+    public void SetPlayerCanDie(bool enable) 
+    {
+        playerCanDie = enable;
     }
 
     private void Update()
@@ -83,7 +94,7 @@ public class Player : DamageableEntity
 
 
         if (canAccelerate && Input.GetButton("Accelerate"))
-            rb.AddForce(newForward * 2f);
+            rb.AddForce(newForward * (movementSpeed * 1000 * Time.deltaTime));
 
         predictedPosition = GetPredictedPositionInSeconds(predictedPositionDistance);
 
@@ -112,10 +123,12 @@ public class Player : DamageableEntity
 
     protected override void OnDeath(Vector3 hitPosition)
     {
-        SpawnDeathEffect();
-        gameObject.SetActive(false);
-        UIManager.current.SetActiveContexts(true, UIContext.DeathScreen);
-        //GameManager.current.LoadingLevel = true;
+        if (playerCanDie)
+        {
+            SpawnDeathEffect();
+            gameObject.SetActive(false);
+            UIManager.current.SetActiveContexts(true, UIContext.DeathScreen);
+        }
     }
 
     protected override void OnDamage(Vector3 hitPosition)

@@ -214,6 +214,7 @@ MonoBehaviour:
   destroyEffectPrefab: {fileID: 6082232281601898227, guid: d6835302bfac1434fb60bbb6474ad637, type: 3}
   spawnEffectOnDestroy: 1
   projectilePrefab: {fileID: 5444981808789670549, guid: 7d907a1095eb20841bb62a87cce6c734, type: 3}
+  movementSpeed: 1
   mousePosition: {x: 0, y: 0, z: 0}
   crossHair: {fileID: 0}
   rb: {fileID: 7519436544388144278}

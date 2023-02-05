@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Projectile : MonoBehaviour
 {
@@ -33,7 +32,7 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        transform.position += transform.up * Speed;
+        transform.position += transform.up * (1000 * Speed * Time.deltaTime);
 
 
         if (limitLifeTime)

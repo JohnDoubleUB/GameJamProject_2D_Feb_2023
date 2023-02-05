@@ -237,6 +237,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="CutsceneAudio" ID="{1132AF85-AD89-49EB-B6DD-FF31B8B31F4E}">
+							<ChildrenList>
+								<Action Name="" ID="{DAE1D055-8533-4AC4-B167-0444DA8A6E03}" ShortID="551552224">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CutsceneAudio" ID="{B6B09752-1580-45D9-943F-03DFA92ADD63}" WorkUnitID="{FB6B8FEB-2416-4760-81D3-05037FC7F9EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SpaceSFX" ID="{315636E2-D24D-4F13-A5E7-218BB0979F90}" ShortID="95335162">

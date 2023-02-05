@@ -6,6 +6,9 @@ public class Drone : DamageableEntity
 {
     public Projectile projectilePrefab;
 
+    [SerializeField]
+    private float movementSpeed = 0.5f;
+
     public Rigidbody2D rb;
 
     public Transform projectileSpawnLocation;
@@ -79,7 +82,7 @@ public class Drone : DamageableEntity
 
             if (distanceToPlayer > maxDistanceFromPlayer)
             {
-                rb.AddForce(transform.up * 0.5f);
+                rb.AddForce(transform.up * (1000 * movementSpeed * Time.deltaTime));
             }
             else
             {
@@ -143,5 +146,13 @@ public class Drone : DamageableEntity
     protected override void OnDamage(Vector3 hitPosition)
     {
         animator.Play("Hit");
+    }
+
+    protected void OnDestroy()
+    {
+        AudioManager.current.AK_PlayClipOnObject("DroneMovementStop", gameObject);
+        AkSoundEngine.StopAll(gameObject);
+
+        base.OnDestroy();
     }
 }

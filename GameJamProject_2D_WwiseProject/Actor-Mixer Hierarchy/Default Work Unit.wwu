@@ -605,7 +605,18 @@
 				</Sound>
 				<Sound Name="EarthAmbience" ID="{E80ACDB0-619A-41DF-BA09-817DEBE2CF15}" ShortID="918260641">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -954,6 +965,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="5_ You May" ID="{21CDECF3-8FD0-44AA-8DDC-301E4C66BE7C}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>5. You May.wav</AudioFile>
 									<MediaIDList>
@@ -1013,7 +1027,18 @@
 				</Sound>
 				<Sound Name="ShipRumble" ID="{83BB1CAF-D414-45D1-9C88-32CAE578AB96}" ShortID="118521872">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1037,6 +1062,19 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="EarthSong" ID="{228903D3-7DC3-44A4-A268-C115D508BBA6}" ShortID="217883777">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DC729208-5A27-4EBD-909F-9CA9F0348C11}"/>
@@ -1082,7 +1120,18 @@
 				</Sound>
 				<Sound Name="SpaceSong" ID="{A1E4FD17-98FF-4492-98BF-3613631C4981}" ShortID="627530242">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1103,6 +1152,28 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="SpaceSong" ID="{8E04E507-1B73-4AED-9303-479F80778256}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CutsceneAudio" ID="{B6B09752-1580-45D9-943F-03DFA92ADD63}" ShortID="177749863">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DC729208-5A27-4EBD-909F-9CA9F0348C11}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C6D6A742-8572-44BC-B5E5-D9753B30D75A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CutSceneAudio" ID="{032B00FF-3FF8-4B06-8342-319E09AE1966}">
+							<Language>SFX</Language>
+							<AudioFile>CutSceneAudio.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="120711074"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CutSceneAudio" ID="{032B00FF-3FF8-4B06-8342-319E09AE1966}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

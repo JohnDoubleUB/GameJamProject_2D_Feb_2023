@@ -94,8 +94,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b51c7c3624bd9d448c1f22ebc5276c3e
     GuidInternal: 
-    m_lastTime: -8585260746678408808
+    m_lastTime: -8585260536092690883
     List:
+    - name: CutsceneAudio
+      guid: 85af321189adeb49b6ddff31b8b31f4e
+      id: 1430235845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b51c7c3624bd9d448c1f22ebc5276c3e
+      - ElementName: EarthSFX
+        ObjectType: 4
+        guid: a18dc518fbfddc44b8d800bdb74e8823
+      - ElementName: CutsceneAudio
+        ObjectType: 3
+        guid: 85af321189adeb49b6ddff31b8b31f4e
+      Path: Events\Default Work Unit\EarthSFX\CutsceneAudio
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: DroneFire
       guid: c8a3e0e78d081049ab6879937271adcd
       id: 4214056565
@@ -804,7 +824,7 @@ MonoBehaviour:
     m_lastTime: -8585261736164741104
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

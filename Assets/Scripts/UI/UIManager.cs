@@ -137,5 +137,8 @@ public enum UIContext
     MainMenu,
     PauseMenu,
     Cutscene,
-    DeathScreen
+    DeathScreen,
+    PointAndClick,
+    ClickPreview,
+    EndScreen
 }

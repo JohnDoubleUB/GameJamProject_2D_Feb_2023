@@ -76,9 +76,13 @@ public class CameraFollow : MonoBehaviour
     {
         if (Camera != null)
         {
-            AudioManager.current.AK_PlayClipOnObject("ShipRumble", gameObject);
+            //AudioManager.current.AK_PlayClipOnObject("ShipRumble", gameObject);
             //AudioManager.current.AK_PlayClipOnObject("SpaceSong", gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
     }
 
 }

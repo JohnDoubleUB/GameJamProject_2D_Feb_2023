@@ -1,0 +1,70 @@
+Event	ID	Name			Wwise Object Path	Notes
+	13776098	Explosion			\Default Work Unit\SpaceSFX\Explosion	
+	89164611	VAShoe			\Default Work Unit\VAEvents\VAShoe	
+	421286007	VABigBen			\Default Work Unit\VAEvents\VABigBen	
+	644359718	VA8			\Default Work Unit\VAEvents\VA8	
+	644359719	VA9			\Default Work Unit\VAEvents\VA9	
+	644359720	VA6			\Default Work Unit\VAEvents\VA6	
+	644359721	VA7			\Default Work Unit\VAEvents\VA7	
+	644359722	VA4			\Default Work Unit\VAEvents\VA4	
+	644359723	VA5			\Default Work Unit\VAEvents\VA5	
+	644359724	VA2			\Default Work Unit\VAEvents\VA2	
+	644359725	VA3			\Default Work Unit\VAEvents\VA3	
+	644359727	VA1			\Default Work Unit\VAEvents\VA1	
+	673226934	SpaceSong			\Default Work Unit\SpaceSFX\SpaceSong	
+	848516368	EarthSong			\Default Work Unit\EarthSFX\EarthSong	
+	1135202491	EarthAmbienceStop			\Default Work Unit\EarthSFX\EarthAmbienceStop	
+	1397429982	SpaceSongStop			\Default Work Unit\SpaceSFX\SpaceSongStop	
+	1430235845	CutsceneAudio			\Default Work Unit\EarthSFX\CutsceneAudio	
+	1508793495	VANewsPaper			\Default Work Unit\VAEvents\VANewsPaper	
+	1510088570	VAPhone			\Default Work Unit\VAEvents\VAPhone	
+	1720237598	DroneMovement			\Default Work Unit\SpaceSFX\DroneMovement	
+	1751418741	ShipWoosh			\Default Work Unit\SpaceSFX\ShipWoosh	
+	2117307804	ShipRumble			\Default Work Unit\SpaceSFX\ShipRumble	
+	2139794104	EarthSongStop			\Default Work Unit\EarthSFX\EarthSongStop	
+	2510255154	VAAllClicked			\Default Work Unit\VAEvents\VAAllClicked	
+	2734475931	HyperDrive			\Default Work Unit\SpaceSFX\HyperDrive	
+	2767461320	VA15			\Default Work Unit\VAEvents\VA15	
+	3201165558	DroneMovementStop			\Default Work Unit\SpaceSFX\DroneMovementStop	
+	3203412995	ShipFire			\Default Work Unit\SpaceSFX\ShipFire	
+	3287156155	EarthAmbience			\Default Work Unit\EarthSFX\EarthAmbience	
+	3534406808	VAPizza			\Default Work Unit\VAEvents\VAPizza	
+	4214056565	DroneFire			\Default Work Unit\SpaceSFX\DroneFire	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	12255861	Pizza	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Pizza_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\Pizza		2116960
+	18580158	HyperDrive	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\HyperDrive_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\HyperDrive		1411360
+	92959818	8_ Please Return	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\8. Please Return_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\8_ Please Return		705760
+	120711074	CutsceneAudio	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\CutSceneAudio_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneAudio		14391460
+	138126318	ShipFire2	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipFire2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship Fire\ShipFire2		352960
+	139546627	All clicked	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\All clicked_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\All clicked		1764160
+	157286659	DroneMovement3	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneMovement3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Movement\DroneMovement3		904208
+	200953183	SpaceSong	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\SpaceSong_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpaceSong		22579360
+	204123510	DroneMovement2	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneMovement2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Movement\DroneMovement2		904208
+	255114796	Shoe	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Shoe_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\Shoe		1234960
+	255711565	DroneFire4	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneFire4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Fire\DroneFire4		352960
+	289701651	EarthSong	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\EarthSong_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EarthSong		18698560
+	301580328	EarthAmbience	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\EarthAmbience_D1642D69.wem		\Actor-Mixer Hierarchy\Default Work Unit\EarthAmbience		9525840
+	310761528	ShipFire1	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipFire1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship Fire\ShipFire1		352960
+	326260920	ShipFire4	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipFire4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship Fire\ShipFire4		352960
+	336280658	DroneMovement1	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneMovement1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Movement\DroneMovement1		1058560
+	425961116	DroneFire1	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneFire1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Fire\DroneFire1		352960
+	543206894	Newspaper	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Newspaper_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\Newspaper		1411360
+	602539061	ShipRumble	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipRumble_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShipRumble		705760
+	648921039	9_ Wow	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\9. Wow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\9_ Wow		1411360
+	682361246	ShipWoosh	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipWoosh_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShipWoosh		705760
+	683186627	2_ Before We	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\2. Before We_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\2_ Before We		3175360
+	716498928	7_ In Fact	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\7. In Fact_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\7_ In Fact		4410160
+	724156831	4_ Amazing	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\4. Amazing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\4_ Amazing		705760
+	738733007	5_ You May	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\5. You May_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\5_ You May		1234960
+	744866416	Phone	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Phone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\Phone		2116960
+	807510312	15_ What What	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\15. What What_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\15_ What What		2293360
+	815899688	6_ On to	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\6. On to_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\6_ On to		2293360
+	818391993	DroneFire2	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneFire2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Fire\DroneFire2		352960
+	851250987	3_ With all	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\3. With all_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\3_ With all		1058560
+	879573503	Big Ben	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Big Ben_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\Big Ben		882160
+	894433988	Explosion	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion		705760
+	1006410069	ShipFire3	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\ShipFire3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship Fire\ShipFire3		352960
+	1018605551	1_ Hello Trainee	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\1. Hello Trainee_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice Acting\1_ Hello Trainee		2469760
+	1073379836	DroneFire3	E:\UnityProjects\GameJamProject_2D\GameJamProject_2D_WwiseProject\.cache\Windows\SFX\DroneFire3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drone Fire\DroneFire3		352960
+

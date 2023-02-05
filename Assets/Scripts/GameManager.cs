@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -61,6 +60,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        PersistentAudio.current.PlaySpaceAudio();
+
         if (Player != null)
         {
             SetPlayerHealthUI(Player.Health);
@@ -180,6 +181,22 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
+    public void LoadLevel(int BuildIndex)
+    {
+        loadingLevel = true;
+        QuadrantManager.current.RemoveAllAsteroids();
+
+        foreach (Drone drone in objectiveDrones)
+        {
+            if (drone == null)
+                continue;
+
+            Destroy(drone.gameObject);
+        }
+
+        SceneManager.LoadScene(BuildIndex);
+    }
+
     private void IntiateQuest(int progression)
     {
         print("Quest progression: " + progression);
@@ -274,15 +291,18 @@ public class GameManager : MonoBehaviour
                 Player.SetCanFire(true);
                 Player.SetEnableCrosshair(true);
                 Player.SetCanAccelerate(true);
+                Player.SetPlayerCanDie(false);
                 cutsceneDrones.SetActive(false);
                 QuadrantManager.current.DisableFurtherAsteroids();
                 ProgressionSave.SaveDataToXMLFile(questProgression);
-
+                UIManager.current.SetActiveContexts(false, UIContext.DeathScreen);
+                //AkSoundEngine.StopAll(Player.gameObject);
 
                 break;
 
             case 11:
-                //Continue to the point and click times!
+                PersistentAudio.current.StopAllPersistentAudio();
+                LoadLevel(1);
                 break;
 
         }
@@ -298,6 +318,8 @@ public class GameManager : MonoBehaviour
 
     private void AK_CallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
     {
+        if (this == null) return;
+
         switch (in_type)
         {
             case AkCallbackType.AK_EndOfEvent:
